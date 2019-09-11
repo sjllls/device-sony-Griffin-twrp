@@ -89,7 +89,7 @@ cp /v/lib64/libkeymasterprovision.so /vendor/lib64/
 cp /v/lib64/libkeymasterutils.so /vendor/lib64/
 cp /v/lib64/libqtikeymaster4.so /vendor/lib64/
 cp /v/lib64/vendor.qti.hardware.tui_comm@1.0.so /vendor/lib64/
-cp /v/lib64/hw/bootctrl.sdm845.so /vendor/lib64/hw/
+cp /v/lib64/hw/bootctrl.msmnile.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.boot@1.0-impl.so /vendor/lib64/hw/
 cp /v/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so /vendor/lib64/hw/
 
