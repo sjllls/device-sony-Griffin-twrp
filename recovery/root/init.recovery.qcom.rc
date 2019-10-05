@@ -45,11 +45,10 @@ service sbinqseecomd /sbin/qseecomd
     disabled
     seclabel u:r:recovery:s0
 
-service prepdecrypt /sbin/prepdecrypt.sh
-    oneshot
-    disabled
+service boot-1-0 /sbin/android.hardware.boot@1.0-service
     user root
     group root
+    disabled
     seclabel u:r:recovery:s0
 
 service hwservicemanager /sbin/hwservicemanager
@@ -59,16 +58,17 @@ service hwservicemanager /sbin/hwservicemanager
     onrestart setprop hwservicemanager.ready false
     seclabel u:r:recovery:s0
 
-service boot-1-0 /sbin/android.hardware.boot@1.0-service
-    user root
-    group root
-    disabled
-    seclabel u:r:recovery:s0
-
 service servicemanager /sbin/servicemanager
     user root
     group root readproc
     disabled
+    seclabel u:r:recovery:s0
+
+service prepdecrypt /sbin/prepdecrypt.sh
+    oneshot
+    disabled
+    user root
+    group root
     seclabel u:r:recovery:s0
 
 service keystore_auth /sbin/keystore_auth
@@ -97,13 +97,13 @@ service keymaster-4-0 /sbin/android.hardware.keymaster@4.0-service-qti
     disabled
     seclabel u:r:recovery:s0
 
-service logd /sbin/logd
+service time_daemon /sbin/time_daemon
     user root
     group root
     disabled
     seclabel u:r:recovery:s0
 
-service time_daemon /sbin/time_daemon
+service logd /sbin/logd
     user root
     group root
     disabled
@@ -128,6 +128,10 @@ on boot
     chown system system /sys/devices/virtual/sec/tsp/cmd
     chmod 0600 /sys/devices/virtual/sec/tsp/cmd
     restorecon /sys/devices/virtual/sec/tsp/cmd
+
+    #For encrypt modules in kernel
+    insmod /sbin/encryptm1o.ko
+    insmod /sbin/encryptionm1o.ko
     
 
 on init
