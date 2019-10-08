@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),griffin)
+ifeq ($(TARGET_DEVICE),Griffin)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

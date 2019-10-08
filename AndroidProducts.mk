@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_griffin.mk
+    $(LOCAL_DIR)/omni_Griffin.mk

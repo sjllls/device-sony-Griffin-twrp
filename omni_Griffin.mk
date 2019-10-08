@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := griffin
+PRODUCT_RELEASE_NAME := Griffin
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,19 +23,19 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/sony/griffin/device.mk)
+$(call inherit-product, device/sony/Griffin/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := griffin
-PRODUCT_NAME := omni_griffin
+PRODUCT_DEVICE := Griffin
+PRODUCT_NAME := omni_Griffin
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := Xperia 1
 PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=griffin \
-    BUILD_PRODUCT=griffin \
-    TARGET_DEVICE=griffin
+    PRODUCT_NAME=Griffin \
+    BUILD_PRODUCT=Griffin \
+    TARGET_DEVICE=Griffin
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model \

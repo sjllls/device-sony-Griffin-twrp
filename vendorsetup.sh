@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_griffin-eng
+add_lunch_combo omni_Griffin-eng
 

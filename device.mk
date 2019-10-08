@@ -1,5 +1,5 @@
 
-LOCAL_PATH := device/sony/griffin
+LOCAL_PATH := device/sony/Griffin
 
 # define hardware platform
 PRODUCT_PLATFORM := msmnile

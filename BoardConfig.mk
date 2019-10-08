@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/sony/griffin
+DEVICE_PATH := device/sony/Griffin
 
 # Architecture
 TARGET_ARCH := arm64
@@ -86,8 +86,8 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Partitions (listed in the file) to be wiped under recovery.
-TARGET_RECOVERY_WIPE := device/sony/griffin/recovery.wipe
-TARGET_RECOVERY_FSTAB := device/sony/griffin/recovery.fstab
+TARGET_RECOVERY_WIPE := device/sony/Griffin/recovery.wipe
+TARGET_RECOVERY_FSTAB := device/sony/Griffin/recovery.fstab
 
 
 # Workaround for error copying vendor files to recovery ramdisk
